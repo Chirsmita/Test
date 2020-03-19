@@ -260,4 +260,4 @@ All the exceptions generated in custom operations as well as JOLT library will f
 - OperationIndex: Index no. of the operation will be passed here on which exception has occurred.
 FIN-JXJ will always return FIN-JXJException object in case of any runtime exceptions. If any operation fails then the execution of the operations will stop and it will return back the handle to the application with an exception and null output.
 In case of default operations provided by the JOLT will return SpecException and TransformException, but FIN-JXJ will mapped their error object to its custom exception class but in other cases it will throw the error object as it is. To custom operations Only FIN-JXJException is exposed and they will always return that exception in their processing. Other exceptions will also be finally mapped to this exception only. 
-
+ 
